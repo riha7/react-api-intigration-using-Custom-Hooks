@@ -6,7 +6,7 @@ const useFetch = (url) => {
     axios(url)
       .then((res) => {
         setdata(res);
-        console.log(res);
+        console.log(res.data);
       })
       .catch((err) => console.log(err));
   }, [url]);
